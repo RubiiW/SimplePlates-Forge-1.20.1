@@ -18,6 +18,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import net.rubii.simpleplates.util.ModTags;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -60,6 +61,8 @@ public class PlateBlockEntity extends BlockEntity {
     }
 
     public ItemStack interact(ItemStack stack, Entity entity){
+        if(stack.is(ModTags.Items.BLACKLIST)) return null;
+
         ItemStack itemstack = itemHandler.getStackInSlot(0);
         if (itemstack.isEmpty()) {
             ItemStack newStack = stack.copy();

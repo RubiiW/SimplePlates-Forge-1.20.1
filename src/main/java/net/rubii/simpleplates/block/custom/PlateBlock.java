@@ -7,6 +7,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -18,6 +19,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.rubii.simpleplates.block.entity.PlateBlockEntity;
+import net.rubii.simpleplates.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import static net.minecraft.world.level.block.HorizontalDirectionalBlock.FACING;
@@ -68,8 +70,10 @@ public class PlateBlock extends BaseEntityBlock {
                 ItemStack handStack = pPlayer.getItemInHand(pHand);
                 ItemStack returnedStack = ((PlateBlockEntity) blockEntity).interact(handStack, pPlayer);
 
+                if (handStack.is(ModTags.Items.BLACKLIST)) return InteractionResult.SUCCESS;
+
                 if (returnedStack == null && !handStack.isEmpty()) {
-                    handStack.setCount(handStack.getCount() - 1);
+                    handStack.shrink(1);
                     pPlayer.playNotifySound(SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1.0F, 2.0F);
                 }else{
                     ItemStack stack1 = handStack.copy();
