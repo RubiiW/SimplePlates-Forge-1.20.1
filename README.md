@@ -14,5 +14,8 @@ Versions ports may come later (mainly Fabric and NeoForge 1.21.1, and maybe 1.21
 
 Credits to Mojang for the current Plate's texture.
 
+# RELEASES
+**Go on the [Modrinth Page](https://modrinth.com/mod/simple-plates) to access the mod's releases**
+
 # LISENCING
-**Project is lisenced under [CreativeCommons Atribution Non Commercial Share Alike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**
+**Project is lisenced under [CreativeCommons Atribution NonCommercial ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**
