@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "simpleplates:plate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bowl",
+    "count": 1
+  }
+}
