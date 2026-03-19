@@ -1,8 +1,6 @@
 package net.rubii.simpleplates.block.custom;
 
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -19,7 +17,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.rubii.simpleplates.SimplePlates;
 import net.rubii.simpleplates.block.entity.PlateBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
