@@ -3,9 +3,9 @@
 ## Features:
 - **Variants to come**
 - **Crafted with a bowl**
-- **Can hold up to 1 stack of 1 item (will increase)**
+- **Can hold up to 1 stack of 1 item (will increase in the future)**
 - **Can be interacted with by right-clicking**
-- **Can hold any type of item**
+- **Can hold any type of item that are not from the blacklist tag**
 - **Plate.**
 
 You may use this mod freely in your modpack as long as it's credited.
